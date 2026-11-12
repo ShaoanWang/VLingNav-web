@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="description"
         content="VLingNav: Embodied Navigation with Adaptive Reasoning and Visual-Assisted Linguistic Memory">
-    <meta name="keywords" content="embodied visual tracking, VLA model">
+    <meta name="keywords" content="VLingNav, embodied navigation, vision-language-action, adaptive reasoning, linguistic memory, IEEE TRO">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>VLingNav: Embodied Navigation with Adaptive Reasoning and Visual-Assisted Linguistic Memory</title>
     <!-- Google tag (gtag.js) -->
@@ -28,25 +28,22 @@
     <script defer src="./static/js/fontawesome.all.min.js"></script>
     <script src="./static/js/slick.min.js"></script>
     <script src="./static/js/index.js"></script>
-    <style>
-        body { padding-top: 4.25rem; }
-        html { scroll-padding-top: 4.25rem; }
-    </style>
 </head>
 
-<body>
+<body id="top">
+    <a class="skip-link" href="#abstract">Skip to content</a>
     <!-- Top Navbar -->
     <nav class="navbar is-spaced is-light is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="#top">
-        <strong>VLingNav</strong>
+        <img class="nav-mark" src="./static/images/favicon.svg" alt="" width="32" height="32"><strong>VLingNav</strong>
         </a>
 
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="topNav">
+        <button type="button" class="navbar-burger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="topNav" data-target="topNav">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
-        </a>
+        </button>
     </div>
 
     <div id="topNav" class="navbar-menu">
@@ -70,54 +67,60 @@
     </div>
     </nav>
 
-    <section class="hero">
+    <main>
+    <section class="hero publication-header" aria-labelledby="publication-title">
         <div class="hero-body">
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-2 publication-title">
-                            VLingNav: Embodied Navigation with Adaptive Reasoning and Visual-Assisted Linguistic Memory
+                        <h1 class="title publication-title" id="publication-title">
+                            <span class="project-name">VLingNav<span class="sr-only">: </span></span>
+                            <span class="project-subtitle">Embodied Navigation with Adaptive Reasoning<br class="desktop-break"> and Visual-Assisted Linguistic Memory</span>
                         </h1>
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
-                                <a href="https://wsakobe.github.io/">Shaoan Wang</a><sup>1, 2,*</sup>,</span>
+                                <a href="https://shaoanwang.github.io/">Shaoan Wang</a><sup>1, 2,*</sup>,</span>
                             <span class="author-block">
-                                <a href="">Yuanfei Luo</a><sup>1,*</sup>,</span>
+                                <span>Yuanfei Luo</span><sup>1,*</sup>,</span>
                             <span class="author-block">
                                 <a href="https://seanchenxy.github.io/">Xingyu Chen</a><sup>2, 3,†</sup>,
                             </span>
                             <span class="author-block">
-                                <a href="">Aocheng Luo</a><sup>2</sup>,
+                                <span>Aocheng Luo</span><sup>2</sup>,
                             </span><br>
                             <span class="author-block">
-                                <a href="">Dongyue Li</a><sup>2</sup>,
+                                <span>Dongyue Li</span><sup>2</sup>,
                             </span>
                             <span class="author-block">
                                 <a href="http://www2.coe.pku.edu.cn/faculty/liuchang/index.html">Chang Liu</a><sup>2</sup>,
                             </span>
                             <span class="author-block">
-                                <a href="">Sheng Chen</a><sup>1,‡</sup>,
+                                <span>Sheng Chen</span><sup>1,‡</sup>,
                             </span>
                             <span class="author-block">
-                                <a href="">Yangang Zhang</a><sup>1</sup>,
+                                <span>Yangang Zhang</span><sup>1</sup>,
                             </span>
                             <span class="author-block">
                                 <a href="https://amr.pku.edu.cn/jzyg/szdw/Y/7cc6c4a98def4c4089fe08ce09a5479c.htm">Junzhi Yu</a><sup>2,†</sup>
                             </span>
                         </div>
 
-                        <div class="is-size-6 publication-authors">
-                            <!-- <span class="author-block">Institution Name<br>Conference name and year</span> -->
-                            <span class="author-block">
-                              <sup>1</sup>ByteDance Seed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              <sup>2</sup>Peking University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              <sup>3</sup>Zhongguancun Academy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-                            </span>
-                          </div>
-              
-                          <div class="is-size-6 publication-authors">
-                            *Equal Contribution&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;‡Project Lead&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;†Corresponding Authors
-                          </div>
+                        <div class="publication-affiliations">
+                            <span><sup>1</sup> ByteDance Seed</span>
+                            <span><sup>2</sup> Peking University</span>
+                            <span><sup>3</sup> Zhongguancun Academy</span>
+                        </div>
+                        <div class="author-notes">
+                            <span>* Equal Contribution</span>
+                            <span>‡ Project Lead</span>
+                            <span>† Corresponding Authors</span>
+                        </div>
+                        <div class="acceptance-banner" aria-label="Publication acceptance">
+                            <div>
+                                <span class="acceptance-label">Accepted by</span>
+                                <strong>IEEE Transactions on Robotics <span class="venue-abbr">(TRO)</span></strong>
+                            </div>
+                        </div>
 
                         <div class="column has-text-centered">
                             <div class="publication-links">
@@ -127,11 +130,11 @@
                                         <span class="icon">
                                             <i class="fas fa-file-pdf"></i>
                                         </span>
-                                        <span>Arxiv</span>
+                                        <span>arXiv</span>
                                     </a>
                                 </span>
                                 <span class="link-block">
-                                    <a href="./static/VLingNav.pdf"
+                                    <a href="./static/vlingnav.pdf"
                                         class="external-link button is-normal is-rounded is-dark" >
                                         <span class="icon">
                                             <i class="fas fa-file-pdf"></i>
@@ -185,11 +188,13 @@
                         </div>
                     </div>
                 </div>
-                <div style="height: 20px;"></div>
                 <!-- Summary Video -->
-                <div class="has-text-centered">
+                <div class="has-text-centered summary-video">
+                    <p class="eyebrow">Watch VLingNav in action</p>
                     <h2 class="title is-4">Summary Video</h2>
-                    <iframe width="840" height="473" src="https://www.youtube.com/embed/BbrUdlkOjN8?si=FiDMq1gt0EfElWLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="publication-video">
+                    <iframe loading="lazy" width="840" height="473" src="https://www.youtube.com/embed/BbrUdlkOjN8?si=FiDMq1gt0EfElWLs" title="VLingNav summary video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -200,6 +205,8 @@
     <section class="section is-light results" id="results-carousel-sec">
     <div class="container is-max-desktop">
         <div class="has-text-centered results-head">
+            <p class="eyebrow">From perception to action</p>
+            <h2 class="title is-3">Navigation in the Real World</h2>
         </div>
         <div class="results-card">
         <div id="results-carousel" class="carousel results-carousel">
@@ -339,7 +346,7 @@ For training, we construct Nav-AdaCoT-2.9M, the largest embodied navigation data
                 VLingNav takes video streams and multimodal instruction as input to produce robot action for navigation with tailored linguistic designs. AdaCoT can adaptively generate linguistic thinking according to its observation, while VLingMem summarizes CoT cues with key visual features for globally informed decision-making.
               </p>
               <center>
-                <img src="./static/videos/pipeline.png" alt="Pipeline Image" width="100%">
+                <img src="./static/videos/pipeline.png" alt="VLingNav architecture with AdaCoT and VLingMem" width="100%">
               </center>
             </div>
           </div>
@@ -357,9 +364,9 @@ For training, we construct Nav-AdaCoT-2.9M, the largest embodied navigation data
               <p>
                 We propose Nav-AdaCoT-2.9M, a large-scale embodied navigation dataset encompassing 2.9 million step-by-step adaptive CoT trajectories. To construct this dataset, we leveraged the Habitat simulator to collect extensive simulated navigation data and further developed an automated CoT annotation pipeline.
               </p>
-              <div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
-                <img src="./static/videos/dataset.png" alt="Pipeline Image" width="50%">
-                <img src="./static/videos/dataset_gen.png" alt="Pipeline Image" width="50%">
+              <div class="method-figures">
+                <img src="./static/videos/dataset.png" alt="Nav-AdaCoT-2.9M dataset composition">
+                <img src="./static/videos/dataset_gen.png" alt="Adaptive chain-of-thought annotation pipeline">
               </div>
             </div>
           </div>
@@ -378,7 +385,7 @@ For training, we construct Nav-AdaCoT-2.9M, the largest embodied navigation data
                 To address the limitations of offline imitation learning, and to better align the VLM's high-level representations with the closed-loop robot continuous action, we introduce an online post-training stage. The agent actively interacts with the simulation environment to collect fresh, on-policy trajectories. The policy is then updated using a hybrid objective function that combines outcome-driven optimization with expert-guided supervision. This dual approach allows the model to explore more effective strategies while preventing catastrophic forgetting of the expert policy.
               </p>
               <center>
-                <img src="./static/videos/posttrain.png" alt="Pipeline Image" width="50%">
+                <img src="./static/videos/posttrain.png" alt="Online expert-guided post-training process" class="post-training-figure">
               </center>
             </div>
           </div>
@@ -431,27 +438,27 @@ For training, we construct Nav-AdaCoT-2.9M, the largest embodied navigation data
         <div class="rw-block__body">
             <div id="carousel-objnav" class="carousel sub-results-carousel">
             <div class="item">
-                <video autoplay controls muted loop playsinline>
+                <video autoplay controls muted loop playsinline preload="metadata">
                 <source src="./static/videos/objnav_outdoor_1.mp4" type="video/mp4" />
                 </video>
             </div>
             <div class="item">
-                <video autoplay controls muted loop playsinline>
+                <video autoplay controls muted loop playsinline preload="metadata">
                 <source src="./static/videos/home_objnav3.mp4" type="video/mp4" />
                 </video>
             </div>
             <div class="item">
-                <video autoplay controls muted loop playsinline>
+                <video autoplay controls muted loop playsinline preload="metadata">
                 <source src="./static/videos/office_objnav2.mp4" type="video/mp4" />
                 </video>
             </div>
             <div class="item">
-                <video autoplay controls muted loop playsinline>
+                <video autoplay controls muted loop playsinline preload="metadata">
                 <source src="./static/videos/objnav_outdoor_2.mp4" type="video/mp4" />
                 </video>
             </div>
             <div class="item">
-                <video autoplay controls muted loop playsinline>
+                <video autoplay controls muted loop playsinline preload="metadata">
                 <source src="./static/videos/office_objnav1.mp4" type="video/mp4" />
                 </video>
             </div>
@@ -471,19 +478,20 @@ For training, we construct Nav-AdaCoT-2.9M, the largest embodied navigation data
         <div class="rw-block__body">
             <div id="carousel-imgnav" class="carousel sub-results-carousel">
             <div class="item">
-                <video autoplay controls muted loop playsinline>
+                <video autoplay controls muted loop playsinline preload="metadata">
                     <source src="./static/videos/imgnav_outdoor_1.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="item">
-                <video autoplay controls muted loop playsinline>
+                <video autoplay controls muted loop playsinline preload="metadata">
                     <source src="./static/videos/home_imgnav1.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="item">
-                <video autoplay controls muted loop playsinline>
+                <video autoplay controls muted loop playsinline preload="metadata">
                     <source src="./static/videos/imgnav_outdoor_2.mp4" type="video/mp4">
                 </video>
+            </div>
             </div>
         </div>
         </section>
@@ -500,14 +508,15 @@ For training, we construct Nav-AdaCoT-2.9M, the largest embodied navigation data
         <div class="rw-block__body">
             <div id="carousel-tracking" class="carousel sub-results-carousel">
             <div class="item">
-                <video autoplay controls muted loop playsinline>
+                <video autoplay controls muted loop playsinline preload="metadata">
                     <source src="./static/videos/track_cross_domain.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="item">
-                <video autoplay controls muted loop playsinline>
+                <video autoplay controls muted loop playsinline preload="metadata">
                     <source src="./static/videos/cross_task.mp4" type="video/mp4">
                 </video>
+            </div>
             </div>
         </div>
         </section>
@@ -531,29 +540,29 @@ For training, we construct Nav-AdaCoT-2.9M, the largest embodied navigation data
         </header>
 
         <div class="rw-block__body">
-            <div id="carousel-objnav" class="carousel sub-results-carousel">
+            <div id="simulation-carousel-objnav" class="carousel sub-results-carousel">
                 <div class="item">
-                    <video autoplay controls muted playsinline>
+                    <video autoplay controls muted playsinline preload="metadata">
                         <source src="./static/videos/sim_objnav3.mp4" type="video/mp4" />
                     </video>
                 </div>
                 <div class="item">
-                    <video autoplay controls muted playsinline>
+                    <video autoplay controls muted playsinline preload="metadata">
                         <source src="./static/videos/sim_objnav2.mp4" type="video/mp4" />
                     </video>
                 </div>
                 <div class="item">
-                    <video autoplay controls muted playsinline>
+                    <video autoplay controls muted playsinline preload="metadata">
                         <source src="./static/videos/sim_objnav1.mp4" type="video/mp4" />
                     </video>
                 </div>
                 <div class="item">
-                    <video autoplay controls muted playsinline>
+                    <video autoplay controls muted playsinline preload="metadata">
                         <source src="./static/videos/sim_objnav4.mp4" type="video/mp4" />
                     </video>
                 </div>
                 <div class="item">
-                    <video autoplay controls muted playsinline>
+                    <video autoplay controls muted playsinline preload="metadata">
                         <source src="./static/videos/sim_objnav5.mp4" type="video/mp4" />
                     </video>
                 </div>
@@ -571,29 +580,29 @@ For training, we construct Nav-AdaCoT-2.9M, the largest embodied navigation data
         </header>
 
         <div class="rw-block__body">
-            <div id="carousel-imgnav" class="carousel sub-results-carousel">
+            <div id="simulation-carousel-imgnav" class="carousel sub-results-carousel">
                 <div class="item">
-                    <video autoplay controls muted playsinline>
+                    <video autoplay controls muted playsinline preload="metadata">
                         <source src="./static/videos/sim_imgnav1.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="item">
-                    <video autoplay controls muted playsinline>
+                    <video autoplay controls muted playsinline preload="metadata">
                         <source src="./static/videos/sim_imgnav2.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="item">
-                    <video autoplay controls muted playsinline>
+                    <video autoplay controls muted playsinline preload="metadata">
                         <source src="./static/videos/sim_imgnav3.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="item">
-                    <video autoplay controls muted playsinline>
+                    <video autoplay controls muted playsinline preload="metadata">
                         <source src="./static/videos/sim_imgnav4.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="item">
-                    <video autoplay controls muted playsinline>
+                    <video autoplay controls muted playsinline preload="metadata">
                         <source src="./static/videos/sim_imgnav5.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -611,34 +620,37 @@ For training, we construct Nav-AdaCoT-2.9M, the largest embodied navigation data
         </header>
 
         <div class="rw-block__body">
-            <div id="carousel-tracking" class="carousel sub-results-carousel">
+            <div id="simulation-carousel-tracking" class="carousel sub-results-carousel">
                 <div class="item">
-                    <video autoplay controls muted playsinline>
+                    <video autoplay controls muted playsinline preload="metadata">
                         <source src="./static/videos/sim_track1.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="item">
-                    <video autoplay controls muted playsinline>
+                    <video autoplay controls muted playsinline preload="metadata">
                         <source src="./static/videos/sim_track2.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="item">
-                    <video autoplay controls muted playsinline>
+                    <video autoplay controls muted playsinline preload="metadata">
                         <source src="./static/videos/sim_track3.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="item">
-                    <video autoplay controls muted playsinline>
+                    <video autoplay controls muted playsinline preload="metadata">
                         <source src="./static/videos/sim_track4.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="item">
-                    <video autoplay controls muted playsinline>
+                    <video autoplay controls muted playsinline preload="metadata">
                         <source src="./static/videos/sim_track5.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
         </div>
+    </section>
+
+    </div>
     </section>
 
     <section class="section" id="acknowledgements">
@@ -661,19 +673,20 @@ For training, we construct Nav-AdaCoT-2.9M, the largest embodied navigation data
             <pre><code>@article{wang2026vlingnav,
     author  = {Wang, Shaoan and Luo, Yuanfei and Chen, Xingyu and Luo, Aocheng and Li, Dongyue and Liu, Chang and Chen, Sheng and Zhang, Yangang and Yu, Junzhi},
     title   = {VLingNav: Embodied Navigation with Adaptive Reasoning and Visual-Assisted Linguistic Memory},
-    journal = {arXiv pre-print},
+    journal = {IEEE Transactions on Robotics},
+    note    = {Accepted for publication},
     year    = {2026},
     url     = {https://arxiv.org/abs/2601.08665}
 }</code></pre>
         </div>
     </section>
 
-    <br>
-    <center class="is-size-10">
-      The website (<a href="https://github.com/wsakobe/VLingNav-web">source code</a>) design was adapted from <a href="https://nerfies.github.io" class="external-link"><span
-                class="dnerf">Nerfies</span></a>.
-    </center>
-    <br>
+    </main>
+    <footer class="site-footer">
+        <div class="container is-max-desktop">
+            <a class="footer-brand" href="#top">VLingNav <span aria-hidden="true">↗</span></a>
+            <p>Website <a href="https://github.com/ShaoanWang/VLingNav-web">source code</a> · Adapted from <a href="https://nerfies.github.io">Nerfies</a>.</p>
+        </div>
+    </footer>
 </body>
-
 </html>
